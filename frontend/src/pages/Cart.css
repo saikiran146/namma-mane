@@ -1,0 +1,75 @@
+.cart-page { padding: 40px 0; }
+.cart-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.cart-header .page-title { margin-bottom: 0; }
+
+.cart-layout { display: grid; grid-template-columns: 1fr 320px; gap: 24px; align-items: start; }
+
+.cart-items { display: flex; flex-direction: column; gap: 12px; }
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.cart-item-emoji { font-size: 2.4rem; flex-shrink: 0; }
+.cart-item-info { flex: 1; }
+.cart-item-info h4 { font-weight: 700; font-size: 0.95rem; }
+.cart-item-price { font-size: 0.82rem; color: var(--text-muted); }
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.quantity-controls button {
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--green);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.quantity-controls button:hover { background: var(--green-light); }
+.quantity-controls span { font-weight: 700; min-width: 20px; text-align: center; }
+
+.cart-item-total { font-weight: 700; font-size: 1rem; color: var(--green-dark); min-width: 70px; text-align: right; }
+
+.remove-btn {
+  background: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+.remove-btn:hover { color: #d32f2f; }
+
+.cart-summary h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
+.summary-lines { display: flex; flex-direction: column; gap: 8px; }
+.summary-line { display: flex; justify-content: space-between; font-size: 0.88rem; color: var(--text-muted); }
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-top: 12px;
+  border-top: 2px solid var(--border);
+  margin-top: 4px;
+  color: var(--green-dark);
+}
+
+@media (max-width: 768px) {
+  .cart-layout { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,31 @@
+.orders-page { padding: 40px 0; }
+.orders-list { display: flex; flex-direction: column; gap: 16px; }
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.order-id { font-weight: 700; font-size: 1rem; display: block; }
+.order-date { font-size: 0.82rem; color: var(--text-muted); }
+
+.order-items-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.order-item-tag {
+  background: var(--green-light);
+  color: var(--green-dark);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.order-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.order-address { font-size: 0.85rem; color: var(--text-muted); }
+.order-total { font-weight: 700; font-size: 1.05rem; color: var(--green-dark); }

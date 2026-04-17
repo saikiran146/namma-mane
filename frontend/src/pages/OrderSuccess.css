@@ -1,0 +1,26 @@
+.success-page {
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.success-card { max-width: 500px; width: 100%; text-align: center; }
+.success-icon { font-size: 4rem; margin-bottom: 16px; }
+.success-card h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; color: var(--green-dark); }
+.success-card > p { color: var(--text-muted); margin-bottom: 24px; }
+
+.order-detail {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order-detail-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+.order-detail-row > span:first-child { color: var(--text-muted); }
+
+.success-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }

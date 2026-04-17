@@ -1,0 +1,83 @@
+.hero {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white;
+  padding: 80px 0;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 28px;
+  max-width: 440px;
+}
+.hero-text .btn-primary {
+  background: white;
+  color: var(--green-dark);
+  font-size: 1rem;
+  padding: 14px 28px;
+}
+.hero-text .btn-primary:hover { background: var(--green-light); }
+.hero-emoji { font-size: 5rem; letter-spacing: 8px; opacity: 0.8; }
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.categories-section { padding: 60px 0; background: var(--white); }
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.category-card {
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.2s;
+  display: block;
+}
+.category-card:hover { border-color: var(--green); box-shadow: var(--shadow); transform: translateY(-2px); }
+.category-emoji { font-size: 3rem; margin-bottom: 12px; }
+.category-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.category-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px; }
+.category-link { color: var(--green); font-weight: 600; font-size: 0.85rem; }
+
+.why-section { padding: 60px 0; }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.why-card {
+  text-align: center;
+  padding: 28px 16px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.why-card span { font-size: 2.4rem; }
+.why-card h4 { font-size: 1rem; font-weight: 700; margin: 10px 0 6px; }
+.why-card p { font-size: 0.85rem; color: var(--text-muted); }
+
+@media (max-width: 900px) {
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .hero-text h1 { font-size: 1.8rem; }
+  .hero-emoji { display: none; }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
