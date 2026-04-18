@@ -2,6 +2,22 @@
 
 A full-stack web app for ordering organic fruits, vegetables, meats, and seafood directly from local farms.
 
+## Screenshots
+
+| Home | Products |
+|---|---|
+| ![Home](screenshots/home.png) | ![Products](screenshots/products.png) |
+
+| Cart | Checkout |
+|---|---|
+| ![Cart](screenshots/cart.png) | ![Checkout](screenshots/checkout.png) |
+
+| Admin Dashboard | Order Management |
+|---|---|
+| ![Admin Dashboard](screenshots/admin-dashboard.png) | ![Orders](screenshots/admin-orders.png) |
+
+> Replace the placeholder images above with actual screenshots after running the app.
+
 ## Features
 
 - **Customer** — Register/Login, browse products by category, add to cart, checkout (guest or logged-in), track orders
